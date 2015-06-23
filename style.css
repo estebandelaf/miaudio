@@ -1,0 +1,241 @@
+html, body, ul, ol, li, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #f00;
+}
+.left {
+	float: left;
+	margin-right: 10px;
+}
+.right {
+	float: right;
+	margin-left: 10px;
+}
+.clear {
+	clear: both;
+}
+body {
+	text-align: center;
+	font: 12px arial, sans-serif;
+	background: #eee;
+}
+#wrapper {
+	text-align: left;
+	margin: auto;
+	width: 775px;
+	background: top center #EEEEEE url(images/body_bg.gif) repeat-y;
+}
+
+#header {
+	background: top left url(images/logo.gif) no-repeat;
+	height: 78px;
+	margin-left: 20px;
+}
+#header h1 {
+	float: left;
+	color: #FD2E00;
+	font-weight: normal;
+	font-size: 22px;
+	padding: 20px 0 0 70px;
+	margin: 0;
+	width: 400px;
+}
+#header p {
+	float: left;
+	color: #333333;
+	padding: 0 0 10px 70px;
+	margin: 0;
+	width: 400px;
+}
+#header #search {
+	float: right;
+	padding-right: 0;
+	margin-right: 9px;
+	width: 240px;
+	text-align: right;
+}
+#header #search .input {
+	border: 1px solid black;
+	font-size: 0.85em;
+}
+
+#nav {
+	background: top center url(images/header_bg.gif) repeat-y;
+	text-align: right;
+	padding: 10px 20px 10px 10px;
+}
+#nav a {
+	color: #fff;
+	text-decoration: none;
+}
+#nav a:hover {
+	color: #f00;
+}
+#nav li {
+	display: inline;
+	margin-left: 10px;
+}
+
+#body {
+	width: 775px;
+	padding: 28px 23px 28px 31px;
+}
+#body h2, #body h3 {
+	background: #f00;
+	color: #fff;
+	margin: -10px 0px -10px 0px;
+}
+#body h2 {
+	font-size: 14px;
+	padding: 6px 23px;
+	width: 665px;
+}
+#body h3 {
+	font-size: 12px;
+	padding: 3px 23px;
+	width: 665px;
+}
+#body .box,
+#body .boxLeft,
+#body .boxRight {
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #999;
+	margin: 2em 0;
+	width: 689px;
+}
+#body .box li,
+#body .boxLeft li,
+#body .boxRight li {
+	margin: 0 0 0.5em 0px;
+}
+#body .box p,
+#body .boxLeft p,
+#body .boxRight p {
+	margin: 0 0 1em 0;
+}
+#body .box li,
+#body .box p {
+	text-align: justify;
+}
+#body .box .embedField {
+	font-size: 0.75em;
+	border: 1px #000 dashed;
+	width: 340px;
+}
+
+.infoRight,
+#body .boxRight {
+	float: right;
+	width: 350px;
+	padding: 5px;
+}
+#body .boxRight {
+	margin-right: 63px;
+}
+
+.infoLeft,
+#body .boxLeft {
+	float: left;
+	width: 320px;
+}
+
+.infoLeft,
+.infoLeft p,
+.infoRight,
+.infoRight p,
+#body .boxLeft, 
+#body .boxLeft p,
+#body .boxRight,
+#body .boxRight p {
+	text-align: justify;
+}
+
+.center,
+#body .box .center,
+#body .boxLeft .center,
+#body .boxRight .center {
+	text-align: center;
+}
+
+#infoUser {
+	border: 2px solid #cecfce;
+	background: #efefef;
+}
+
+.rate {
+	font-size: 0.8em;
+}
+
+.help_box{
+	width: 300px;
+	margin: 10px auto 0px auto;
+	border: 2px solid #000;
+	background-color: #fff;
+	padding: 3px;
+	visibility: hidden;
+	float: right;
+	position: absolute;
+	text-align: justify;
+}
+
+/* BOOKMARKS
+*********************************************************/
+.sc-tagged {
+	width:16px;
+	height:16px;
+	border:1px solid #999;
+	padding:2px;
+	margin:3px
+}
+#bookmarks {
+	padding:10px 0;
+	text-align:center
+}
+#bookmarks a, 
+#bookmarks a:hover, 
+#bookmarks a:visited {
+	background-color:transparent;
+	border:none
+}
+#delicious{ background: url(images/bookmarks.png) 0px 0px no-repeat; }
+#digg{ background: url(images/bookmarks.png) -20px 0px no-repeat; }
+#technorati{ background:url(images/bookmarks.png) -40px 0px no-repeat; }
+#blinklist{ background:url(images/bookmarks.png) -60px 0px no-repeat; }
+#furl{ background:url(images/bookmarks.png) -80px 0px no-repeat; }
+#reddit{ background:url(images/bookmarks.png) -100px 0px no-repeat; }
+#newsvine{ background:url(images/bookmarks.png) -120px 0px no-repeat; }
+#spurl{ background:url(images/bookmarks.png) -140px 0px no-repeat; }
+#yahoo{ background:url(images/bookmarks.png) -160px 0px no-repeat; }
+#fark{ background:url(images/bookmarks.png) -200px 0px no-repeat; }
+
+/* FOOTER
+*********************************************************/
+
+#footer {
+	background: top left url(images/footer_bg.gif) repeat-x;
+	float: right;
+	width: 455px;
+	margin-right: 9px;
+	margin-bottom: 0px;
+}
+#footer-right {
+	background: top left url(images/footer_left.gif) no-repeat;
+	padding: 20px 0px 10px 0px;
+	font-size: 11px;
+	text-align: center;
+}
