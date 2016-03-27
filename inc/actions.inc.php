@@ -32,7 +32,7 @@
 				header("location: ".$miaudio['url']."/error.php?error=2&u=$parametros");
 		}
 	}
-	
+
 	// idioma del navegador del usuario
 	$idioma_loaded = 0;
 	$idiomas = explode(",", $_SERVER['HTTP_ACCEPT_LANGUAGE']);
@@ -45,7 +45,7 @@
 	}
 	if(!$idioma_loaded) {
 		if(file_exists($miaudio['dir']."/lang/".$miaudio['lang']['default'].".php"))
-			require_once($micd['site']['dir']."/lang/".$miaudio['lang']['default'].".php");
+			require_once($miaudio['dir']."/lang/".$miaudio['lang']['default'].".php");
 		else {
 			$consultasSql->cerrar();
 			exit("Lo sentimos pero no se ha encontrado ninguna definici&oacute;n de idiomas y el sitio no puede ser mostrado.");
@@ -77,11 +77,11 @@
 	// verificar si el administrador esta logueado y leer datos del usuario
 	$login = (isset($_SESSION['userId'])) ? $_SESSION['userId'] : 0;
 	//if($login) require_once($miaudio['dir']."/inc/readuser.inc.php");
-	
+
 	// contar elementos en las tablas
 	$miaudio['numUsers']['actual'] = $consultasSql->contar($miaudio['mysql']['prefix']."users");
 	$miaudio['numFiles'] = $consultasSql->contar($miaudio['mysql']['prefix']."files");
-	
+
 	// de donde se viene, usado para evitar el envio de formularios desde otras web
 	//$miaudio['pastUrl'] = $_SERVER['REFERER_URL'];
 	//echo $miaudio['pastUrl'];
